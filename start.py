@@ -1,11 +1,16 @@
 
+ # generate random between 0 and 100
 
-a = "+49 (176) 123-4567".replace("+","").replace(" ","").replace("(","").replace(")","").replace("-","")
+import random
 
-print(int(a))
+x = random.randint(0, 100)
 
-a = "+1 (555) 987-6543".replace("+","").replace(" ","").replace("(","").replace(")","").replace("-","")
-
-print(int(a))
+print(x)
 
 
+result = x
+
+if result % 2 == 0:
+    print("even")
+else:
+    print("odd")
